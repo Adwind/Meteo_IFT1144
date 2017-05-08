@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+body{
+	background-image: url('../images/arrplan.jpg');
+	background-attachment: fixed;
+}
+
+main{
+	display:block;
+	clear:both;
+}
+
+main h2{
+	color: #0b3387;
+	text-align: center;
+	font-family:Arial;
+}
+
+label {
+    margin-bottom: 20px;
+}
+
+#conteneur{
+	border: thin solid white;
+	width: 950px;
+}
+
+#entPrinc{
+	text-align:center;	
+	color: #0b3387;
+	font-size:80px;
+}
+
+#navPrinc ol{
+	list-style-type:none;
+}
+#navPrinc li{
+	float: left;
+}
+#navPrinc a{
+	display: inline-block;
+	width: 200px;
+	background-color: #0b3387;
+	text-align: center;
+	padding: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 30px;
+	color: white;
+	text-decoration: none;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
+}
+#navPrinc a:link{
+	color:white;
+}
+#navPrinc a:visited{
+	color:#1bc7ec;
+}
+#navPrinc a:hover{
+	color: white;
+	background-color:#1b5fec;
+}
+#navPrinc a:active {
+	background-color:#1b93ec;
+	color: black;
+	font-style:italic;
+	font-weight: bold;
+}
+
+#piedPrinc{
+	clear:both;
+}
+#piedPrinc table{
+	width: 100%;
+	border: thin solid black;
+	border-spacing: 0 0px;
+	background-color : #A4CAF7;
+}
+#piedPrinc td, tr{
+	font-family: Arial;
+	font-size: 14px;
+	border: thin solid black;
+	text-align: center;
+}
+
+.gauche{
+	background-color:white;
+	padding: 5px;
+	float:left;
+    width: 68%;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+.gauche table{
+	width: 90%;
+	border: thin solid gray;
+	border-spacing: 0 0px;
+	text-align:center;
+	border-collapse: collapse;
+	table-layout:fixed;
+}
+.gauche th{
+	border: thin solid gray;
+	background-color : #0e66a8;
+}
+.gauche td{
+	border: thin solid gray;
+	background-color : #a9d6f8;
+}
+
+.chaud{
+	color:red;
+}
+.froid{
+	color:blue;
+}
+
+.droite{
+	background-color:#d2d2d2;
+	padding:5px;
+	float:right;
+    width: 28%;
+	margin: 5px;
+}
+
+.droite iframe, video{
+	width: 95%;
+	height: 220px;
+}
+
+.principale{
+	background-color:white;
+}
+
+.principale fieldset{
+	border-style: dotted;
+	border-color: #7AF;
+}
+
+.principale legend{
+	color: #7AF;
+	font-size: 125%;
+}
+
+/*change la couleur du label si l'input est valid du required*/
+.input_valid{
+	padding:8px;
+	display:block;
+	border: 10px;
+	border-bottom:1px solid #808080;
+	width:100%
+}
+.valid_label{
+	color:#005996;
+}
+
+/*si l'input invalide label est rouge */
+.input_valid:not(:valid)~.not-valid{
+	color:#ea1c0d;
+}
+
+.principale label{
+	color: #00007f;
+}
+
+
+/*Special pour les boutons dans commandes (ou plus s'i y en a d'autre)*/
+.boutons {
+	margin: 10px;
+	border: 2px solid #008CBA; 
+	background-color: white;
+	color: black;
+	padding: 8px 16px;
+	text-align: center;
+	display: inline-block;
+	font-size: 12px;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	box-shadow: 0 3px #999;
+}
+.boutons:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.boutons:active {
+	background-color: #008CBC;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}

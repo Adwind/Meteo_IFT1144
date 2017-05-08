@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="utf-8">
+	<meta name="description" content="Page principale meteo de Alexandra Potvin">
+	<meta name="keywords" content="Alexandra,Potvin,etudiant,meteo,home">
+	<meta name="author" content="Alexandra Potvin">
+		
+	<link rel="shortcut icon" href="images/soleil.png">
+		
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<noscript>Votre browser ne supporte pas JavaScript.</noscript>
+  </head>
+  
+  
+  <body>
+	<div id="conteneur">
+		<header id="entPrinc">
+			<title>M&eacute;t&eacute;o IFT1144 - Accueil</title>
+			<p>M&eacute;t&eacute;o IFT1144</p>
+		</header>
+		
+		<nav id="navPrinc">
+			<ol>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="pages/commandes.html">Commandes</a></li>
+				<li><a href="pages/javascript.html">JavaScript</a></li>
+				<li><a href="http://www.meteomedia.com" target="_blank">Source</a></li>
+			</ol>
+		</nav>
+		
+		<main>
+		
+		<!--Section de gauche avec la meteo-->
+			<section class="gauche">
+				<h2>Montr&eacute;al</h2>
+				<p>Pr&eacute;visions m&eacute;t&eacute;orologiques de 4 jours &agrave; partir du 1<sup>er</sup>
+				mars pour la ville de <b>Montr&eacute;al</b>.</p>
+				
+				<table align="center" alt="Tableau des temperatures au debut mars">
+					<tr>
+						<th>Mardi</th>
+						<th>Mercredi</th>
+						<th>Jeudi</th>
+						<th>Vendredi</th>
+					</tr>
+					<tr>
+						<td><img alt="Plutot nuageux" src="images/nuage.gif"></td>
+						<td><img alt="Faible pluie" src="images/peu_pluie.gif"></td>
+						<td><img alt="Ciel variable" src="images/ciel_var.gif"></td>
+						<td><img alt="Ensoleille" src="images/soleil.png"></td>
+					</tr>
+					<tr class="froid">
+						<td>Min. -2&deg;C</td>
+						<td>Min. 2&deg;C</td>
+						<td>Min. 4&deg;C</td>
+						<td>Min. 5&deg;C</td>
+					</tr>
+					<tr class="chaud">
+						<td>Max. 4&deg;C</td>
+						<td>Max. 6&deg;C</td>
+						<td>Max. 8&deg;C</td>
+						<td>Max. 10&deg;C</td>
+					</tr>
+				</table>
+				<p>Adresse courriel: <a href="mailto:alexandra-potvin@hotmail.com"> alexandra-potvin@hotmail.com</a><br>
+				<a href="pages/commandes.html#piedPrinc">Lien vers le bas dans la page commandes.html</a></p>
+			</section>
+			
+			<!--Section de droite celle avec les video -->
+			<section class="droite">
+				<h2>Vid&eacute;os</h2>
+				<p>Les couleurs d'automne passent vite!</p>
+				<video controls="controls" name="Arbres d'Automne"
+				src="videos/automne.mp4">
+				</video>
+				<p>Lost in Thoughts All Alone de Rena Strober</p>
+				<iframe width="854" height="480" src="https://www.youtube.com/embed/do5NTPLMqXQ" 
+				frameborder="0" allowfullscreen></iframe>
+			</section>
+		</main>
+		
+		<footer id="piedPrinc">
+			<table>
+				<tr>
+					<!-- HTML validator -->
+					<td rowspan="3">
+						<a href="http://validator.w3.org/check/referer" target="_blank">
+						<img alt="valide HTML" src="images/html5bleu.jpg" /></a>
+					</td>
+						
+					<td><a href="http://www-desi.iro.umontreal.ca/~potvinal/tp2/index.html">M&eacute;t&eacute;o Page Principale</a></td>
+						
+					<!-- CSS validator -->
+					<td rowspan="3">
+						<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+						<img alt="validator CSS" src="images/cssbleu.jpg" /></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Alexandra Potvin</td>
+				</tr>
+				<tr>
+					<td>Matricule: 20018697 - Login: potvinal</td>
+				</tr>
+			</table>
+		</footer>
+	</div>
+	
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="utf-8">
+	<meta name="description" content="Page commande du site meteo de Alexandra Potvin">
+	<meta name="keywords" content="Alexandra,Potvin,etudiant,meteo,commande">
+	<meta name="author" content="Alexandra Potvin">
+		
+	<link rel="shortcut icon" href="../images/soleil.png">
+		
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	
+	<noscript>Votre browser ne supporte pas JavaScript.</noscript>
+  </head>
+  
+  
+  <body>
+	<div id="conteneur">
+		<header id="entPrinc">
+			<title>M&eacute;t&eacute;o IFT1144 - Commandes</title>
+			<p>M&eacute;t&eacute;o IFT1144</p>
+		</header>
+		
+		<nav id="navPrinc">
+			<ol>
+				<li><a href="../index.html">Accueil</a></li>
+				<li><a href="commandes.html">Commandes</a></li>
+				<li><a href="javascript.html">JavaScript</a></li>
+				<li><a href="http://www.meteomedia.com" target="_blank">Source</a></li>
+			</ol>
+		</nav>
+		
+		<main>
+			<section class="principale">
+				<h2>Commandes</h2>
+				
+				<!--Form requis-->
+				<form action="http://www-desi.iro.umontreal.ca/~stewartk/cgi-bin/traite_form.cgi" method ="post" name="commandes" id="commandes">
+					
+					<!--Fieldset de la partie plus information de l'usager du form-->
+					<fieldset>
+						<legend>Identification</legend>
+						
+						<input class="input_valid" type="text" name= "name" maxlength="40" size="50" id="name_id" placeholder="Nom,Prenom" pattern="[A-Z]{1}[a-z]{0,},[A-Z]{1}[a-z]{0,}" required>
+						<label class="valid-label not-valid" >Nom, P&eacute;nom*</label>
+						<br>
+						<fieldset>
+							<legend>Sexe*</legend>
+							<input type="radio" name="sexe" value="homme" id="homme_id" checked required> 
+							<label for="homme_id">Homme</label>
+							<input type="radio" name="sexe" value="femme" id="femme_id" > 
+							<label for="femme_id">Femme</label>
+							<input type="radio" name="sexe" value="autre" id="autre_id" > 
+							<label for="autre_id">Autre</label>							
+						</fieldset>
+						<br>
+						<input class="input_valid" type="email" name= "courriel" id= "courriel_id" required> 
+						<label class="valid-label not-valid">Courriel* </label>
+						<br>
+						<input type="text" class="input_valid" name= "tel" placeholder="(xxx)xxx-xxxx" patern="\([1-9][0-9]{2}\)[0-9]{3}-[0-9]{4}" id="telephone_id"> 
+						<label class="valid-label">T&eacute;l&eacute;phone </label>
+						<br>
+						<label>Adresse </label>
+						<textarea name= "adresse" placeholder="Entrez votre adresse" cols="50" rows="4" id="adresse_id"></textarea>
+						<br>
+						<label for="nav_id">Choix de navigateur</label>
+						<input list="navigateurs" name="nav_name" id="nav_id"/>
+						<datalist id="navigateurs">
+							<option value="Chrome">
+							<option value="Firefox">
+							<option value="Internet Explorer">
+							<option value="Opera">
+							<option value="Safari">
+							<option value="Microsoft Edge">
+						</datalist>
+					</fieldset>
+					
+					<!--Fieldset de la partie plus commande du form-->
+					<fieldset>
+					<legend>Commande</legend>
+						<label>Carte Globo </label>
+						<select name="pays[]" id="select_id" size="2">
+							<optgroup label="Europe">
+								<option value="france" selected> France </option>
+								<option value="angleterre"> Angleterre </option>
+								<option value="italie"> Italie </option>
+							</optgroup>
+							<optgroup label="Asie">
+								<option value="chine"> Chine </option>
+								<option value="japon"> Japon </option>							
+								<option value="coree"> Cor&eacute;e </option>
+							</optgroup>
+						</select>	
+						<fieldset>
+							<legend>Vid&eacute;o</legend>
+							<label for="oiseaux_id">Oiseaux </label>
+							<input type="checkbox" name="video[]" value="oiseaux" id="oiseaux_id">
+							<label for="tornades_id">Tornades </label> 
+							<input type="checkbox" name="video[]" value="tornades" id="tornades_id"> 
+							<label for="grele_id">Gr&ecirc;le </label>
+							<input type="checkbox" name="video[]" value="grele" id="grele_id">
+						</fieldset>
+						
+						<label >Carte de cr&eacute;dit* </label>
+						<select name="carte[]" id="carte_id" size="2" required>
+							<option value="AmericanExpress" selected>American Express</option>
+							<option value="Visa">Visa</option>
+							<option value="Mastercard">Mastercard</option>
+						</select>
+						
+						<input class="input_valid" name="code" type="password" size="12" maxlength="10" id="password_id"required>
+						<label class="valid-label not-valid">Mot de passe* </label>
+					</fieldset>
+					
+					
+					<!--Boutton submit et reset pour le form-->
+					<input type="reset" name="reset" id="reset_id" value="Effacer" class="boutons">
+					<input type="submit" name="submit" id="submit_id" value="Envoyer" class="boutons"> 
+					<label >*obligatoire</label>
+					
+				</form>
+				
+				<a href="commandes.html#entPrinc">Lien vers le haut de la page commandes.html</a></p>
+			</section>
+		</main>
+		
+		<footer id="piedPrinc">
+			<table>
+				<tr>
+					<!-- HTML validator -->
+					<td rowspan="3">
+						<a href="http://validator.w3.org/check/referer" target="_blank">
+						<img alt="valide HTML" src="../images/html5bleu.jpg" /></a>
+					</td>
+						
+					<td><a href="http://www-desi.iro.umontreal.ca/~potvinal/tp2/index.html">M&eacute;t&eacute;o Page Principale</a></td>
+						
+					<!-- CSS validator -->
+					<td rowspan="3">
+						<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+						<img alt="validator CSS" src="../images/cssbleu.jpg" /></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Alexandra Potvin</td>
+				</tr>
+				<tr>
+					<td>Matricule: 20018697 - Login: potvinal</td>
+				</tr>
+			</table>
+		</footer>
+	</div>
+  </body>
+</html>

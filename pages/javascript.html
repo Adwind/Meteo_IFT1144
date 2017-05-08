@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+  <head>
+    <meta charset="utf-8">
+	<meta name="description" content="Page javascript du site meteo de Alexandra Potvin">
+	<meta name="keywords" content="Alexandra,Potvin,etudiant,meteo,javascript">
+	<meta name="author" content="Alexandra Potvin">
+  
+	<link rel="shortcut icon" href="../images/soleil.png">
+		
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	
+	<noscript>Votre browser ne supporte pas JavaScript.</noscript>
+  </head>
+  
+  
+  <body>
+	<div id="conteneur">
+		<header id="entPrinc">
+			<title>M&eacute;t&eacute;o IFT1144 - Javascript</title>
+			<p>M&eacute;t&eacute;o IFT1144</p>
+		</header>
+		
+		<nav id="navPrinc">
+			<ol>
+				<li><a href="../index.html">Accueil</a></li>
+				<li><a href="commandes.html">Commandes</a></li>
+				<li><a href="javascript.html">JavaScript</a></li>
+				<li><a href="http://www.meteomedia.com" target="_blank">Source</a></li>
+			</ol>
+		</nav>
+		
+		<main>
+			<section class="principale">
+				<h2>JavaScript</h2>
+				<!--Javascript  utilisation de bouton pour pouvoir tester et rouler sans cesse le javascript (c'est plus commode pour tous le monde)-->
+				
+				<!--Espace pour la question 1 avec Zone notes pour les notes entrer par l'utisisateur etudiant
+				Zone statistique pour les statistique calculer-->
+				<h3>Question #1 : Statistiques</h3>
+				<script src="../js/statistique.js"></script>
+				<button class="boutons" onclick="statistiques()">Entrez des nouvelles statistiques</button>
+				<p id = "zoneNotes"></p>
+				<p id = "zoneStatistique"></p>
+				
+				<!--Espace pour la question 2 avec zone tableau pour l'espace du tableau 2d donner par la 
+				question ayant juste le nom et la somme des depense et zone total ayant le total des somme depenser-->
+				<h3>Question #2 : Tableaux</h3>
+				<script src="../js/tableaux.js"></script>
+				<button class="boutons" onclick="tableaux()">Entrez un nouveau tableau</button>
+				<p id = "zoneTableaux"></p>
+				<p id = "zoneTotal"></p>
+			</section>
+		</main>
+		
+		<footer id="piedPrinc">
+			<table>
+				<tr>
+					<!-- HTML validator -->
+					<td rowspan="3">
+						<a href="http://validator.w3.org/check/referer" target="_blank">
+						<img alt="valide HTML" src="../images/html5bleu.jpg" /></a>
+					</td>
+						
+					<td><a href="http://www-desi.iro.umontreal.ca/~potvinal/tp2/index.html">M&eacute;t&eacute;o Page Principale</a></td>
+						
+					<!-- CSS validator -->
+					<td rowspan="3">
+						<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+						<img alt="validator CSS" src="../images/cssbleu.jpg" /></a>
+					</td>
+				</tr>
+				<tr>
+					<td>Alexandra Potvin</td>
+				</tr>
+				<tr>
+					<td>Matricule: 20018697 - Login: potvinal</td>
+				</tr>
+			</table>
+		</footer>
+	</div>
+  </body>
+</html>
